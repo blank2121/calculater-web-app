@@ -1,0 +1,79 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container {
+    
+    width: 45%;
+    height: 60vh;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #cbced162;
+}
+.container #result {
+    width: 97%;
+    height: 80px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    background: #ecf0f363;
+    border-radius: 6px;
+    /*box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;*/
+}
+
+.row1, .row2, .row3, .row4, .row5 {
+    width: 100%;
+    margin-top: 0.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+
+.row1 button, .row2 button, .row3 button, .row4 button, .row5 button {
+   width: 80px;
+   height: 30px;
+   font-size: 16px;
+   border: none;
+   outline: none;
+   margin: 5px;
+   border-radius: 4px;
+   /*box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #ffffff;*/
+}
+
+.row5 #zero {
+    width: 160px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-radius: 4px;
+    /*box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #ffffff;*/
+}
+
+.row5 #equal {
+    background-color: #3F5EFB8f;
+    color: white;
+}
+
+.row1 #ce {
+    background-color: #fc466aac;
+    color: white;
+}
+
+.row5 button{
+    margin: 0px 6.5px;
+}

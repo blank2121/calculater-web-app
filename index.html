@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="result">
+            <input type="text" id="result" autocapitalize="off" autocomplete="off">
+        </div>
+        <div class="row1">
+            <button name="dont_enter" id="ce" onclick="document.getElementById('result').value='';">CE</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value=factorial(eval(document.getElementById('result').value));">x!</button>
+            <button name="dont_enter" onclick='document.getElementById("result").value+="\("';'>(</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='\)';">)</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='%'">%</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='/';">÷</button>
+        </div>
+        <div class="row2">
+            <button name="dont_enter" onclick="document.getElementById('result').value+='sin(';">sin()</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='π';">π</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='7';">7</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='8';">8</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='9';">9</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='*';">x</button>
+        </div>
+        <div class="row3">
+            <button name="dont_enter" onclick="document.getElementById('result').value+='cos(';">cos()</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='log(';">log()</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='4';">4</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='5';">5</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='6';">6</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='-';">-</button>
+        </div>
+        <div class="row4">
+            <button name="dont_enter" onclick="document.getElementById('result').value+='tan(';">tan()</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='√(';">√</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='1';">1</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='2';">2</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='3';">3</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='+';">+</button>
+        </div>
+        <div class="row5">
+            <button name="dont_enter" onclick="document.getElementById('result').value+='e';">e</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='^';">^</button>
+            <button name="dont_enter" id="zero" onclick="document.getElementById('result').value+='0';">0</button>
+            <button name="dont_enter" onclick="document.getElementById('result').value+='.';">.</button>
+            <button name="dont_enter" id="equal" onclick="ans();">=</button>
+        </div>
+    </div>
+    
+</body>
+</html>
